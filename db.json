@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "json",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Hello",
+      "completed": false
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
