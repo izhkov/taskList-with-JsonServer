@@ -14,8 +14,8 @@ function App() {
   }, [])
   return (
     <div>
-      <h1>Список дел</h1>
-      <ul>
+      <h1>Tasks</h1>
+      <ul className="container">
         {data.length > 0 ? (
           <div>
             {data.map((post, id) => (
