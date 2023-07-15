@@ -5,6 +5,7 @@
 
 body {
   background-color: #f3f3f3;
+  text-align: center;
 }
 
 h1 {
@@ -13,16 +14,125 @@ h1 {
 }
 
 .postItem {
-  margin-bottom: 15px;
-  display: block;
+  display: flex;
+  align-items: center;
   text-align: center;
   font-size: 22px;
 }
 
 .container {
-  width: fit-content;
-  margin: 0 auto;
+  margin: 15px auto;
+  text-align: center;
   background-color: white;
   padding: 20px 30px;
   border-radius: 10px;
+}
+
+input[type='checkbox'] {
+  margin: 0 0 0 300px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+input[type='text'] {
+  display: block;
+  margin: 30px auto;
+  width: 500px;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(208, 208, 208);
+  background-color: transparent;
+  transition: 0.2s linear;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border: 2px solid rgb(55, 83, 168);
+}
+
+.createTask {
+  display: block;
+  margin: 30px auto;
+  width: 350px;
+  padding: 20px 0;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid rgb(208, 208, 208);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.createTask:hover {
+  border: 2px solid rgb(55, 83, 168);
+}
+
+.deleteTask {
+  width: 140px;
+  padding: 10px 0;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 2px solid rgb(208, 208, 208);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s linear;
+  margin-top: 30px;
+}
+
+.deleteTask:hover {
+  border: 2px solid rgb(133, 37, 37);
+}
+
+.editTask {
+  width: 180px;
+  padding: 10px 0;
+  margin-left: 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 2px solid rgb(208, 208, 208);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s linear;
+  margin-top: 30px;
+}
+
+.editTask:hover {
+  border: 2px solid rgb(133, 37, 37);
+}
+
+input[placeholder='Поиск задачи'] {
+  width: 180px;
+  padding: 10px 15px;
+  margin-top: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid rgb(208, 208, 208);
+  background-color: transparent;
+}
+
+.sortTask {
+  width: 140px;
+  padding: 10px 0;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 2px solid rgb(208, 208, 208);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s linear;
+  margin-left: 30px;
+}
+
+.numberSortTask {
+  width: 140px;
+  padding: 10px 0;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: rgb(31, 91, 151);
+  border: 2px solid rgb(31, 91, 151);
+  color: #f3f3f3;
+  cursor: pointer;
+  transition: 0.2s linear;
+  margin-left: 30px;
 }
